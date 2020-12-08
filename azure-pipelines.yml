@@ -30,7 +30,7 @@ stages:
 
 - stage: Dev deploy
   jobs:
-     - job: job1
-      steps:
+  - job: job 5
+    steps:
       - script: echo Hello, world!
         displayName: 'Run a one-line script'
