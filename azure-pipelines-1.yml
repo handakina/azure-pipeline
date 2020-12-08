@@ -28,3 +28,8 @@ stages:
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'handakina docker hub'
+        repository: 'handakina/currency-exchange'
+        command: 'push'
