@@ -6,7 +6,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-- stage: Dev deploy
+- stage: Dev_deploy
   jobs:
     - job: job1
       steps:
@@ -24,7 +24,7 @@ stages:
       - script: echo Hello, world!
         displayName: 'Run a one-line script'
 
-- stage: Prod Deploy
+- stage: Prod_Deploy
   jobs:
   - job: job5
     steps:
